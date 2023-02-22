@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [{
+        "src": "payment.js",
+        "use": "@now/node"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "payment.js"
+    }]
+}
